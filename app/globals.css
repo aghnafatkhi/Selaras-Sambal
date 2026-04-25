@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #ED1D2B;
+  --color-brand-orange: #F79621;
+  --color-brand-dark: #313131;
+  --color-brand-crimson: #C43D2A;
+  --color-brand-bg: #FFFEFE;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-display: var(--font-outfit), ui-sans-serif, system-ui;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-brand-bg text-brand-dark relative;
+  }
+  body::before {
+    content: "";
+    @apply fixed inset-0 pointer-events-none opacity-[0.03] z-[100];
+    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  }
+}

@@ -45,8 +45,8 @@ export default function Hero() {
                   <CheckCircle className="text-brand-red w-6 h-6 md:w-8 md:h-8" />
                 </motion.div>
                 <div>
-                  <p className="font-bold text-lg md:text-xl text-brand-dark">Gratis Nasi & Lalapan</p>
-                  <p className="text-gray-500 max-w-sm text-sm md:text-base">Nikmati sepuasnya setiap pembelian menu nasi di outlet Kota Wisata Cibubur.</p>
+                  <p className="font-bold text-lg md:text-xl text-brand-dark">Selalu Fresh</p>
+                  <p className="text-gray-500 max-w-sm text-sm md:text-base">Bukan stok lama. Setiap sambal dibuat saat Anda pesan, jadi rasanya lebih segar.</p>
                 </div>
               </div>
 
@@ -56,7 +56,7 @@ export default function Hero() {
                   transition={{ duration: 0.2, ease: "easeOut" }}
                   className="p-5 border border-gray-100 rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all"
                 >
-                  <p className="text-[10px] text-gray-400 uppercase font-black tracking-widest mb-2">Big Order / Catering</p>
+                  <p className="text-[10px] text-gray-400 uppercase font-black tracking-widest mb-2">Pesan Antar & Catering</p>
                   <p className="text-base md:text-lg font-black text-brand-dark">0853-7133-4717</p>
                 </motion.div>
                 <motion.div 
@@ -64,28 +64,16 @@ export default function Hero() {
                   transition={{ duration: 0.2, ease: "easeOut" }}
                   className="p-5 border border-gray-100 rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all"
                 >
-                  <p className="text-[10px] text-gray-400 uppercase font-black tracking-widest mb-2">Jam Operasional</p>
-                  <p className="text-base md:text-lg font-black text-brand-dark underline decoration-brand-red decoration-2">Setiap Hari: 08:00 - 21:00</p>
+                  <p className="text-[10px] text-gray-400 uppercase font-black tracking-widest mb-2">Buka Setiap Hari</p>
+                  <p className="text-base md:text-lg font-black text-brand-dark underline decoration-brand-red decoration-2">08:00 - 21:00 WIB</p>
                 </motion.div>
               </div>
 
               <div className="flex items-center gap-6">
-                <div className="flex -space-x-3">
-                  {[1, 2, 3].map((i) => (
-                    <motion.div 
-                      key={i} 
-                      whileHover={{ zIndex: 10, scale: 1.15, y: -5 }}
-                      transition={{ duration: 0.2, ease: "easeOut" }}
-                      className="w-10 h-10 rounded-full border-2 border-white bg-gray-200 overflow-hidden cursor-pointer"
-                    >
-                      <img src={`https://picsum.photos/seed/${i+10}/100/100`} alt="User feedback" />
-                    </motion.div>
-                  ))}
-                  <div className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-brand-dark text-white text-[10px] font-bold">
-                    500+
-                  </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-brand-red font-black text-lg">4.5★</span>
+                  <span className="text-xs md:text-sm text-gray-500 font-medium italic">dari 1.000+ pelanggan</span>
                 </div>
-                <p className="text-xs md:text-sm text-gray-500 font-medium italic">Favorit Keluarga di Kota Wisata Cibubur</p>
               </div>
             </motion.div>
           </div>
@@ -114,11 +102,11 @@ export default function Hero() {
             >
               <div>
                 <span className="text-[10px] font-bold bg-white/20 px-2 py-1 rounded-full uppercase tracking-widest">Hot Seller</span>
-                <h3 className="text-2xl md:text-3xl font-black mt-4 leading-tight">PAKET COBEK <br /> BER-2</h3>
+                <h3 className="text-2xl md:text-3xl font-black mt-4 leading-tight">Paket Cobek <br /> 2 Orang</h3>
               </div>
               <div className="mt-8">
                 <p className="text-3xl md:text-4xl font-black">Rp 86K</p>
-                <p className="text-[10px] md:text-xs opacity-80 mt-2 font-medium">Ayam, Kulit, Tahu/Tempe, Jukut, Nasi (2x)</p>
+                <p className="text-[10px] md:text-xs opacity-80 mt-2 font-medium">Ayam Goreng, Kulit, Tahu/Tempe, Jukut, Nasi (2x)</p>
               </div>
             </motion.div>
 
@@ -145,7 +133,7 @@ export default function Hero() {
               </div>
               <div className="mt-8">
                 <p className="text-3xl md:text-4xl font-black text-brand-orange">Rp 25K</p>
-                <p className="text-[10px] md:text-xs opacity-80 mt-2 font-medium">Citarasa gurih & pedas khas Selaras</p>
+                <p className="text-[10px] md:text-xs opacity-80 mt-2 font-medium">Gurih, pedas, dan bikin nagih khas Selaras</p>
               </div>
             </motion.div>
 
@@ -173,7 +161,7 @@ export default function Hero() {
                   <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
                   <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Pusat Utama</span>
                 </div>
-                <h4 className="font-display font-black text-gray-800 text-lg md:text-2xl leading-tight">Ciangsana, <span className="text-brand-red">Kota Wisata</span></h4>
+                <h4 className="font-display font-black text-gray-800 text-lg md:text-2xl leading-tight">Cibubur – <span className="text-brand-red">Kota Wisata (Ciangsana)</span></h4>
                 <p className="text-[11px] md:text-sm text-gray-500 leading-snug mt-2 font-bold opacity-70 italic">Samping Gerbang Utama Kota Wisata Cibubur</p>
               </div>
             </motion.div>

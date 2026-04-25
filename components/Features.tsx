@@ -5,26 +5,26 @@ import { Leaf, Flame, Users, Clock } from 'lucide-react';
 
 const features = [
   {
-    title: 'Sambal Dadakan',
-    description: 'Dibuat langsung saat pesanan masuk untuk menjaga kesegaran dan cita rasa maksimal.',
+    title: 'Selalu Fresh',
+    description: 'Bukan stok lama. Setiap sambal dibuat saat Anda pesan, jadi rasanya lebih segar.',
     icon: Flame,
     color: 'bg-red-100 text-brand-red',
   },
   {
-    title: 'Refill Nasi & Lalapan',
-    description: 'Gratis tambah nasi putih dan lalapan sepuasnya untuk setiap pembelian menu nasi.',
+    title: 'Free Refill Nasi',
+    description: 'Gratis tambah nasi putih dan lalapan sepuasnya.',
     icon: Leaf,
     color: 'bg-green-100 text-green-600',
   },
   {
-    title: 'Ramah Keluarga',
-    description: 'Tempat duduk luas, casual, dan nyaman untuk berkumpul bersama keluarga atau grup.',
+    title: 'Tempat Nyaman',
+    description: 'Tempat luas dan nyaman untuk makan bareng keluarga atau teman.',
     icon: Users,
     color: 'bg-orange-100 text-brand-orange',
   },
   {
-    title: 'Layanan Cepat',
-    description: 'Menerima pesanan Nasi Box dan Catering untuk berbagai acara spesial Anda.',
+    title: 'Pesan Antar',
+    description: 'Tersedia layanan Nasi Box dan Catering untuk event atau selamatan Anda.',
     icon: Clock,
     color: 'bg-blue-100 text-blue-600',
   },
@@ -50,10 +50,10 @@ export default function Features() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-3xl mx-auto mb-16 md:mb-20"
         >
-          <span className="text-brand-red font-black text-xs uppercase tracking-[0.4em] mb-4 block">Our Values</span>
-          <h2 className="font-display text-4xl md:text-5xl font-black mb-6 uppercase tracking-tight">Menghadirkan <span className="text-brand-orange text-outline-dark">Keselarasan</span> Rasa</h2>
+          <span className="text-brand-red font-black text-xs uppercase tracking-[0.4em] mb-4 block">Keunggulan Kami</span>
+          <h2 className="font-display text-4xl md:text-5xl font-black mb-6 uppercase tracking-tight">Kenapa Harus <span className="text-brand-orange text-outline-dark">Sambal</span> Selaras?</h2>
           <p className="text-gray-500 text-base md:text-lg font-medium italic">
-            &ldquo;Kami percaya sambal terbaik adalah yang dibuat dengan cinta, dedikasi, dan bahan baku pilihan setiap harinya.&rdquo;
+            &ldquo;Pedasnya pas, selalu fresh, dan harga tetap masuk akal di setiap porsi.&rdquo;
           </p>
         </motion.div>
  

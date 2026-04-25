@@ -87,14 +87,14 @@ export default function Navbar() {
                 )}
               </AnimatePresence>
               <motion.div layout>
-                <a
-                  href="https://wa.me/6285371334717"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-brand-red text-white px-6 py-2.5 rounded-full text-xs font-bold shadow-xl shadow-brand-red/30 hover:bg-brand-crimson transition-all transform hover:scale-105 active:scale-95 uppercase tracking-wider whitespace-nowrap"
-                >
-                  RESERVASI
-                </a>
+                  <a
+                    href="https://wa.me/6285371334717"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-brand-red text-white px-6 py-2.5 rounded-full text-xs font-bold shadow-xl shadow-brand-red/30 hover:bg-brand-crimson transition-all transform hover:scale-105 active:scale-95 uppercase tracking-wider whitespace-nowrap"
+                  >
+                    RESERVASI VIA WHATSAPP
+                  </a>
               </motion.div>
             </motion.div>
           </motion.div>
@@ -153,7 +153,7 @@ export default function Navbar() {
                   className="flex items-center justify-center gap-2 bg-brand-red text-white py-4 rounded-2xl font-black uppercase tracking-widest shadow-xl shadow-brand-red/30"
                 >
                   <Phone size={20} />
-                  <span>RESERVASI SEKARANG</span>
+                  <span>PESAN SEKARANG</span>
                 </a>
               </motion.div>
             </div>

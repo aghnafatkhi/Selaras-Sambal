@@ -77,7 +77,7 @@ export default function LocationContact() {
                   className="inline-flex items-center gap-3 bg-green-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl font-black uppercase tracking-widest hover:bg-green-600 transition-all relative z-10 shadow-lg text-[10px] md:text-sm"
                 >
                   <MessageCircle size={18} className="md:w-5 md:h-5" />
-                  Hubungi Kota Wisata
+                  Reservasi via WhatsApp
                 </motion.a>
               </div>
             </div>

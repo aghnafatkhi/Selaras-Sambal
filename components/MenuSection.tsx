@@ -5,10 +5,10 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ShoppingCart, Star, Coffee, Utensils, Pizza } from 'lucide-react';
 
 const paketCobek = [
-  { id: 1, name: 'Paket Ber-2 (1)', price: '86K', desc: 'Ayam Goreng (1), Kulit, Nasi (2), Tahu/Tempe, Jukut, Sambal, Lalap' },
-  { id: 2, name: 'Paket Ber-2 (2)', price: '80K', desc: 'Ayam Goreng (1), Bebek Goreng (1), Nasi (2), Tahu/Tempe, Sambal, Jukut, Lalap' },
-  { id: 3, name: 'Paket Ber-4', price: '136K', desc: 'Ayam Goreng (2), Kulit (2), Nasi (4), Tahu/Tempe (4), Sambal (4), Jukut (4), Lalap' },
-  { id: 4, name: 'Paket Ber-6', price: '212K', desc: 'Ayam (2), Nila (2), Kulit (2), Nasi (6), Tahu/Tempe (6), Sambal (6), Jukut (6), Lalap' },
+  { id: 1, name: 'Paket 2 Orang (A)', price: '86K', desc: 'Ayam Goreng, Kulit Krispi, Nasi (2x), Tahu & Tempe, Jukut, Sambal Dadakan' },
+  { id: 2, name: 'Paket 2 Orang (B)', price: '80K', desc: 'Ayam Goreng, Bebek Goreng, Nasi (2x), Tahu & Tempe, Jukut, Sambal Dadakan' },
+  { id: 3, name: 'Paket 4 Orang', price: '136K', desc: 'Ayam Goreng (2x), Kulit (2x), Nasi (4x), Tahu/Tempe (4x), Sambal, Jukut, Lalap' },
+  { id: 4, name: 'Paket 6 Orang', price: '212K', desc: 'Ayam (2x), Nila (2x), Kulit (2x), Nasi (6x), Tahu/Tempe (6x), Pas untuk kumpul besar' },
 ];
 
 const menuData = {
@@ -45,9 +45,9 @@ export default function MenuSection() {
       <div className="container mx-auto px-6">
         {/* Paket Cobek Header */}
         <div id="paket" className="text-center mb-10 md:mb-16">
-          <span className="text-brand-red font-bold text-[10px] uppercase tracking-widest bg-brand-red/10 px-3 py-1 rounded-full mb-4 inline-block">Makan Hemat</span>
-          <h2 className="font-display text-3xl md:text-5xl font-black text-brand-dark mb-4">PAKET COBEK SELARAS</h2>
-          <p className="text-gray-500 text-sm md:text-base max-w-xl mx-auto">Pilihan porsi hemat yang pas untuk berbagi kebahagiaan di setiap moment makan Anda.</p>
+          <span className="text-brand-red font-bold text-[10px] uppercase tracking-widest bg-brand-red/10 px-3 py-1 rounded-full mb-4 inline-block">Makan Hemat & Puas</span>
+          <h2 className="font-display text-3xl md:text-5xl font-black text-brand-dark mb-4">PILIHAN PAKET COBEK</h2>
+          <p className="text-gray-500 text-sm md:text-base max-w-xl mx-auto">Porsi pas buat sharing bareng teman atau keluarga. Lebih hemat untuk makan bareng.</p>
         </div>
 
         {/* Paket Cards */}
@@ -121,7 +121,7 @@ export default function MenuSection() {
                         </span>
                         {item.best && (
                           <span className="bg-brand-orange text-white text-[8px] md:text-[9px] font-black px-1.5 md:px-2 py-0.5 rounded-md uppercase tracking-widest leading-none">
-                            Best
+                            Best Seller
                           </span>
                         )}
                       </div>

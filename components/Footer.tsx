@@ -24,8 +24,7 @@ export default function Footer() {
               <span className="font-display text-2xl font-black uppercase tracking-tighter">SELARAS <span className="text-brand-red">SAMBAL</span></span>
             </Link>
             <p className="text-gray-400 max-w-sm mb-10 leading-relaxed font-medium">
-              Spesialis Sambal Dadakan dan masakan autentik Indonesia. 
-              Membangun selera dalam keselarasan rasa yang tak terlupakan.
+              Spesialis Sambal Dadakan di Cibubur. Sambal fresh yang dibuat saat dipesan, bahan berkualitas, dan harga tetap ramah di kantong.
             </p>
             <div className="flex gap-6 items-center text-[10px] font-black text-gray-500 uppercase tracking-widest bg-white/5 w-fit px-6 py-3 rounded-2xl border border-white/10">
               <span className="flex items-center gap-2 text-white"><span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> DINE-IN</span>

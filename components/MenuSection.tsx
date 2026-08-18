@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 import { ShoppingCart, Star, Coffee, Utensils, Pizza, ChevronRight } from 'lucide-react';
 
 const paketCobek = [
@@ -183,16 +183,14 @@ export default function MenuSection() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-x-8 lg:gap-x-16 gap-y-0.5">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={activeTab}
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.2, ease: "easeOut" }}
-                className="col-span-full grid md:grid-cols-2 gap-x-8 lg:gap-x-16"
-              >
-                {menuData[activeTab].map((item, idx) => (
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+              className="col-span-full grid md:grid-cols-2 gap-x-8 lg:gap-x-16"
+            >
+              {menuData[activeTab].map((item, idx) => (
                   <div key={idx} className="flex items-center group py-2 sm:py-3 md:py-4 border-b border-gray-100 gap-2.5 sm:gap-4">
                     <img 
                       src={item.image} 
@@ -219,7 +217,6 @@ export default function MenuSection() {
                   </div>
                 ))}
               </motion.div>
-            </AnimatePresence>
           </div>
 
           <div className="mt-6 sm:mt-10 md:mt-14 text-center">

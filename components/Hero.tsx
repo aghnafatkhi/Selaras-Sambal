@@ -5,7 +5,7 @@ import { ChevronRight, MapPin } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative pt-20 sm:pt-24 md:pt-32 pb-10 sm:pb-14 md:pb-24 overflow-hidden bg-white min-h-[100dvh] flex items-center justify-center">
+    <section className="relative pt-20 sm:pt-24 md:pt-32 pb-10 sm:pb-14 md:pb-24 overflow-hidden bg-white min-h-screen flex items-center justify-center">
       {/* Background accents & Texture */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none z-0" style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/natural-paper.png")' }} />
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-bg to-transparent -z-10 opacity-30" />

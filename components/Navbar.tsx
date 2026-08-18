@@ -36,15 +36,14 @@ export default function Navbar() {
   ];
 
   return (
-    <motion.nav
-      animate={{ 
-        paddingTop: scrolled ? 6 : (isMobile ? 8 : 16), 
-        paddingBottom: scrolled ? 6 : (isMobile ? 8 : 16),
-        backgroundColor: (scrolled || mobileMenuOpen) ? 'rgba(255, 255, 255, 0.9)' : 'rgba(255, 255, 255, 0.05)',
-        boxShadow: (scrolled || mobileMenuOpen) ? '0 10px 40px rgba(0, 0, 0, 0.04)' : 'none'
-      }}
-      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b transition-colors duration-500 ${mobileMenuOpen ? 'border-brand-red/5' : 'border-white/10'}`}
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b transition-all duration-300 ease-out ${
+        scrolled 
+          ? 'py-2 bg-white/95 shadow-md shadow-black/5 border-gray-100/60' 
+          : mobileMenuOpen
+            ? 'py-2 bg-white border-brand-red/5 shadow-md shadow-brand-red/5'
+            : 'py-2.5 md:py-4 bg-white/5 border-white/10'
+      }`}
     >
       <div className="container mx-auto px-4 sm:px-6 flex justify-between items-center">
         <div className="flex-shrink-0">
@@ -205,6 +204,6 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </nav>
   );
 }

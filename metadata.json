@@ -1,6 +1,6 @@
 {
-  "name": "Selaras Sambal - Spesialis Sambal Dadakan",
+  "name": "Sell - Selaras Sambal 1",
   "description": "Website resmi Selaras Sambal Kota Wisata Cibubur. Nikmati aneka paket cobek, sambal dadakan, dan menu Kopitiam otentik.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

@@ -61,8 +61,80 @@ const menuData = {
   ]
 };
 
-export default function MenuSection() {
+export function MenuSectionSkeleton() {
+  return (
+    <section className="py-10 sm:py-16 md:py-24 bg-gray-50">
+      <div className="container mx-auto px-4 sm:px-6">
+        {/* Paket Cobek Header Skeleton */}
+        <div className="text-center mb-6 sm:mb-10 md:mb-16 flex flex-col items-center">
+          <div className="h-4 w-32 bg-gray-200 rounded-full animate-pulse mb-3" />
+          <div className="h-8 sm:h-12 w-64 sm:w-96 bg-gray-200 rounded-xl animate-pulse mb-3" />
+          <div className="h-4 w-72 sm:w-80 bg-gray-200/80 rounded-lg animate-pulse" />
+        </div>
+
+        {/* Paket Cards Skeleton */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-6 md:gap-8 mb-8 sm:mb-14 md:mb-24">
+          {[...Array(4)].map((_, i) => (
+            <div
+              key={i}
+              className="bg-white rounded-2xl sm:rounded-3xl md:rounded-[2.5rem] shadow-sm border border-gray-100 flex flex-col overflow-hidden"
+            >
+              <div className="h-36 sm:h-44 md:h-56 bg-gray-200 animate-pulse relative" />
+              <div className="p-4 sm:p-5 md:p-8 flex-1 flex flex-col gap-3">
+                <div className="h-5 w-3/4 bg-gray-200 rounded-md animate-pulse" />
+                <div className="space-y-1.5">
+                  <div className="h-3 w-full bg-gray-100 rounded animate-pulse" />
+                  <div className="h-3 w-4/5 bg-gray-100 rounded animate-pulse" />
+                </div>
+                <div className="flex items-center justify-between mt-auto pt-3 sm:pt-4 md:pt-6 border-t border-gray-100">
+                  <div className="space-y-1">
+                    <div className="h-2.5 w-12 bg-gray-200 rounded animate-pulse" />
+                    <div className="h-6 w-20 bg-gray-200 rounded-md animate-pulse" />
+                  </div>
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-200 rounded-xl sm:rounded-2xl animate-pulse" />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Regular Menu Tabs Skeleton */}
+        <div className="bg-white rounded-2xl sm:rounded-3xl md:rounded-[3rem] shadow-lg shadow-brand-dark/5 p-3.5 sm:p-6 md:p-14 border border-gray-100/60">
+          <div className="flex justify-start sm:justify-center gap-2 sm:gap-4 mb-6 sm:mb-10 overflow-x-auto pb-2 sm:pb-0">
+            {[...Array(3)].map((_, i) => (
+              <div key={i} className="h-10 sm:h-12 w-28 sm:w-40 bg-gray-200 rounded-full animate-pulse flex-shrink-0" />
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-x-8 lg:gap-x-16 gap-y-3">
+            {[...Array(6)].map((_, i) => (
+              <div key={i} className="flex items-center py-2 sm:py-3 border-b border-gray-100 gap-3">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg sm:rounded-xl bg-gray-200 animate-pulse flex-shrink-0" />
+                <div className="flex-1 space-y-2">
+                  <div className="h-4 w-3/5 bg-gray-200 rounded animate-pulse" />
+                  <div className="h-3 w-2/5 bg-gray-100 rounded animate-pulse" />
+                </div>
+                <div className="h-5 w-14 bg-gray-200 rounded animate-pulse" />
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 text-center flex flex-col items-center">
+            <div className="h-3 w-64 bg-gray-100 rounded mb-4 animate-pulse" />
+            <div className="h-12 w-56 bg-gray-200 rounded-2xl animate-pulse" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default function MenuSection({ isLoading = false }: { isLoading?: boolean }) {
   const [activeTab, setActiveTab] = useState<'utama' | 'snack' | 'kopitiam'>('utama');
+
+  if (isLoading) {
+    return <MenuSectionSkeleton />;
+  }
 
   return (
     <section id="menu" className="py-10 sm:py-16 md:py-24 bg-gray-50">
